@@ -191,8 +191,8 @@ function test_input($data)
 <script>
     function Modal(){
 
-        submitButton = $('input[name="submit"]');
-        userName = $("input[name='name']").val();
+        //var submitButton = $('input[name="submit"]');
+        var userName = $("input[name='name']").val();
 
         $( "form" ).on( "submit", function( event ) {
             event.preventDefault();
@@ -211,7 +211,7 @@ function test_input($data)
 
         /*insert if for success for modal*/
     swal({
-        title: userName+", you're The Best!",
+        title: userName+"You're The Best!",
         text: "You'll receive an email shortly from you're Account Mgr.",
         type: "success",
         confirmButtonText: "Cool Beans"
