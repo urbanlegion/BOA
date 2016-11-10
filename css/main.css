@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700');
+
+html,body
+{
+/*    width: 100%;
+    height: 100%;*/
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+.container-fluid{
+    padding: 0;
+    width: 100%;
+    margin:0;
+}
+#background{
+    left:0;
+    padding: 0;
+    margin:0;
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("../img/bkrnd002.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#header{
+    background-color: rgba(42, 18, 0, 0.4);
+    padding: 50px 0;
+}
+#header img{
+    margin: auto;
+    margin-top: 50px;
+    width: 15%;
+    display: block;
+}
+#join{
+background: rgba(255, 182, 130, 0.35);
+    padding: 30px;
+}
+#join h1{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    color: white;
+}
+.theRealDivider{
+    padding:2px;
+    background-color: white;
+    width: 100%;  }
+#formWrapper input:not(:last-child){
+    margin: 5px;
+    font-family: 'Open Sans', sans-serif;
+}
+#formWrapper{
+    text-align: center;
+}
+#CTA{
+    background: url("../img/Rectangle1.png");
+    border: 0;
+    display: inline-block;
+    height: 42px;
+    width: 161px;
+    margin-top: 30px;
+}
+#weGot{
+    padding-left: 120px;
+    padding-right: 120px;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    background-color: rgba(253,106,0,0.37);
+}
+#weGot h1{
+    font-weight:100;
+    font-size:20px;
+    width: 60%;
+    margin-left: 20%;
+
+}
+#weGot h3{
+    margin-top: -10px;
+    font-weight:800;
+    font-size: 16px;
+    width: 60%;
+    margin-left: 20%;
+
+}
+#weGot p{
+    font-weight: 400;
+    font-size: 10px;
+    margin-bottom: 25px;
+    width: 60%;
+    margin-left: 20%;
+}
+.plusSign{
+    position: absolute;
+    top: -11px;
+    margin-top: -5px;
+    margin-left: -12px;
+    font-size: 14px;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 4px solid white;
+    background-color: #fd6a00;
+    display: inline-table;
+    text-align: center;
+}
+.plusSign a{
+    color: white;
+}
+.plusSign a:visited{
+    color: white;
+}
+.plusSign a:hover{
+    color: white;
+}
+#machine{
+    padding: 80px;
+    background-color: white;
+    text-align: center;
+
+}
+#machine h1{
+    font-weight:600;
+    font-family: 'Open Sans', sans-serif;
+}
+#machine p{
+    font-family: 'Open Sans', sans-serif;
+}
+#machine img{
+    width: 75%;
+}
+#about{
+    margin: 0;
+    text-align: center;
+    background: url("../img/skateboard.png");
+    width: 100%;
+    height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#about p{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    margin: 84px auto;
+}
+#achievements{
+    background-color: white;
+    text-align: center;
+    padding: 50px;
+
+}
+#achievements img{
+    width: 75%;
+    padding: 50px;
+}
+.achievementWrapper{
+    display: inline-block;
+}
+.sprite {
+    display: inline-block;
+    margin: 10px 60px;
+}
+.achievementWrapper p{
+    margin-top:0px;
+    font-family: 'Open Sans', sans-serif;
+    color: #222222;
+    font-size: 18px;
+}
+.sprite-mic {
+    background: url('../img/VectorSmartObject.png') no-repeat 0 -1px;
+    width: 59px;
+    height: 69px;
+}
+.sprite-man {
+    background: url('../img/VectorSmartObject.png') no-repeat -228px 0;
+    width: 59px;
+    height: 71px;
+}
+.sprite-trophy {
+    background: url('../img/VectorSmartObject.png') no-repeat -455px -3px;
+    width: 61px;
+    height: 65px;
+}
+.sprite-dollar {
+    background: url('../img/VectorSmartObject.png') no-repeat -677px -13px;
+    width: 73px;
+    height: 45px;
+}
+.sprite-location {
+    background: url('../img/VectorSmartObject.png') no-repeat -915px -2px;
+    width: 54px;
+    height: 67px;
+}
+.sprite-stat {
+    background: url('../img/VectorSmartObject.png') no-repeat -1139px -6px;
+    width: 61px;
+    height: 59px;
+}
+#footer{
+    padding-left: 50px;
+    background-color: #ec6e03;
+    padding-top: 50px;
+    text-align: center;
+
+}
+#footer p{
+    text-align: left;
+    font-size:10px;
+
+
+/*    position: absolute;
+    top:10px;
+    left:40px;*/
+}
+#sendUp {
+
+    background: url("../img/sendUp.png");
+    border: 0;
+    margin-left:-275px;
+    display: inline;
+    height: 42px;
+    width: 161px;
+}
+.errorMsg{
+    color: white;
+    text-shadow: 1px 1px black;
+    font-family: 'Open Sans', sans-serif;
+    font-weight:300;
+
+}
+
+/*PLACEHOLDER*/
+input:focus, textarea:focus {
+    box-shadow: 0 0 55px rgb(255, 136, 0);
+    padding: 0px 0px 0px 0px;
+    margin: 5px 1px 3px 0px;
+    border: 3px solid rgba(255, 189, 4, 0.75);
+}
+::-webkit-input-placeholder {
+    color: black;
+}
+:-moz-placeholder { /* Firefox 18- */
+    color: black;
+}
+::-moz-placeholder {  /* Firefox 19+ */
+    color: black;
+}
+:-ms-input-placeholder {
+    color: black;
+}
