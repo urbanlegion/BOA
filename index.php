@@ -27,8 +27,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 //passing error to view
     if ($error) {
         $errorMsg = "All fields except phone and skype are required.";
+    }else{
+        echo '<html><body onload="Modal();"></body></html>';
     }
-
 }
 function test_input($data)
 {
@@ -45,6 +46,7 @@ function test_input($data)
     <meta charset="UTF-8">
     <title>BOA</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/sweetalert.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -180,10 +182,43 @@ function test_input($data)
     $('a[href=#header]').click(function () {
         $("html,body").animate({scrollTop: pos}, "slow", function () {
             console.log('a clicked');
-
         });
 
     });
 </script>
+<script src="js/sweetalert.min.js"></script>
+
+<script>
+    function Modal(){
+
+        submitButton = $('input[name="submit"]');
+        userName = $("input[name='name']").val();
+
+        $( "form" ).on( "submit", function( event ) {
+            event.preventDefault();
+            console.log( $( this ).serialize() );
+
+            $.ajax({
+                type: "POST",
+                url: "<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>",
+                data: {
+
+                }
+            }).done(function( msg ) {
+                alert( "Data Saved: " + msg );
+            });
+        });
+
+        /*insert if for success for modal*/
+    swal({
+        title: userName+", you're The Best!",
+        text: "You'll receive an email shortly from you're Account Mgr.",
+        type: "success",
+        confirmButtonText: "Cool Beans"
+    });
+    }
+
+</script>
+
 </body>
 </html>
